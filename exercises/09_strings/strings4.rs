@@ -17,7 +17,7 @@ fn main() {
 
     string("red".to_string());
 
-    string(String::from("hi"));
+    string(String::from("hi")); // daily 
 
     string("rust is fun!".to_owned());
 
