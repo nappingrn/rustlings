@@ -30,7 +30,7 @@ mod tests {
         assert_eq!(maybe_icecream(18), Some(5));
         assert_eq!(maybe_icecream(22), Some(0));
         assert_eq!(maybe_icecream(23), Some(0));
-        assert_eq!(maybe_icecream(24), None);
+        assert_eq!(maybe_icecream(24), None); //ugh
         assert_eq!(maybe_icecream(25), None);
     }
 }
