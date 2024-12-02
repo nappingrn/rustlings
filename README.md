@@ -1,1 +1,1 @@
-a daily practice repo to help keep the ghabit of daily programming
+The hardest part of going to the gym is getting there
