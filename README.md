@@ -1,1 +1,1 @@
-a daily practice repo to help keep the habit of daily programming
+a daily practice repo to help keep the ghabit of daily programming
