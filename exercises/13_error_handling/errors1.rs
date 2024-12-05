@@ -1,15 +1,22 @@
+use std::result;
+
 // TODO: This function refuses to generate text to be printed on a nametag if
 // you pass it an empty string. It'd be nicer if it explained what the problem
 // was instead of just returning `None`. Thankfully, Rust has a similar
 // construct to `Option` that can be used to express error conditions. Change
 // the function signature and body to return `Result<String, String>` instead
 // of `Option<String>`.
-fn generate_nametag_text(name: String) -> Option<String> {
+fn generate_nametag_text(name: String) -> Result<String,String> {
     if name.is_empty() {
+        let errorString = "Empty names aren't allowed";
         // Empty names aren't allowed
-        None
+       let result: Result<String,String> = Err(errorString.to_string());
+       return result;
     } else {
-        Some(format!("Hi! My name is {name}"))
+        let nameresult = ("Hi! My name is ".to_owned() + &name);
+        let result: Result<String,String> = Ok(nameresult.to_string());
+       return result;
+  
     }
 }
 
