@@ -26,6 +26,6 @@ fn main() {
         println!("You can't afford that many!");
     } else {
         tokens -= cost;
-        println!("You now have {tokens} tokens."); //checking in
+        println!("You now have {tokens} tokens."); //ahhh
     }
 }
