@@ -40,7 +40,7 @@ impl PositiveNonzeroInteger {
         }
     }
 
-    fn parse(s: &str) -> Result<Self, ParsePosNonzeroError> {
+    fn parse(s: &str) -> Result<Self, ParsePosNonzeroError> { // i hate errors
         // TODO: change this to return an appropriate error instead of panicking
         // when `parse()` returns an error.
         let x: i64 = s.parse().unwrap();
