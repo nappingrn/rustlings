@@ -18,7 +18,7 @@ struct ReportCard<T> {
     student_age: u8,
 }
 
-// TODO: Adjust the impl block as described above.
+// TODO: Adjust the impl block as described above. okay
 impl<T: std::fmt::Display> ReportCard<T> {
     fn print(&self) -> String {
         format!(
